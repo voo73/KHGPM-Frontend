@@ -20,6 +20,9 @@ import JpaProductRegisterPage from "@/views/lecture/product/JpaProductRegisterPa
 import JpaProductReadPage from "@/views/lecture/product/JpaProductReadPage.vue"
 import JpaProductModifyPage from "@/views/lecture/product/JpaProductModifyPage.vue"
 
+import FileUploadPage from "@/views/lecture/file/FileUploadPage.vue"
+import ImageGalleryPage from "@/views/lecture/gallery/ImageGalleryPage.vue"
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -112,6 +115,16 @@ const routes = [
     props: {
       default: true
     }
+  },
+  {
+    path: '/file-upload',
+    name: 'FileUploadPage',
+    component: FileUploadPage
+  },
+  {
+    path: '/image-gallery',
+    name: 'ImageGalleryPage',
+    component: ImageGalleryPage
   }
 
   
